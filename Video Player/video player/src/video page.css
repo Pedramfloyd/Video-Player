@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    width: 100%;
+    
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+   
+}
+
+div {
+    display: block;
+}
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.custom-button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+    padding: 10px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.custom-button:hover {
+ 
+    color: rgb(143, 143, 143);
+}
+
+
+
+.video::-webkit-media-controls {
+    display: none; 
+}
+
+
+
+/* Styling for the Container with Border */
+.video-recommendations {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.recommended-video {
+    margin-bottom: 20px;
+}
+
+.video-thumbnail {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    transition: transform 0.2s ease-in-out;
+}
+
+.video-title {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.video-description {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-comments {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.video-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+}
+
+.video-link:hover {
+    color: #007bff;
+}
+
+/*Add hover effect for video thumbnails */
+.video-thumbnail:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+}
+
+
+
+
+.comment-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.comment-input textarea {
+   
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    resize: none;
+    font-size: 14px;
+}
+
+.comment-input button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.comment-input button:hover {
+    background-color: #0056b3; 
+}
+
+.comment-list .comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: #fff; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); 
+}
+
+.comment .comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.comment .comment-text {
+    font-size: 14px;
+}
+
+
+.social-sharing {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-sharing h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #777;
+    border: none;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #333; 
+}
+
+
+
+
+.social-icon i {
+    font-size: 24px;
+}
+
+/* Apply the custom scrollbar styles to the container with overflow */
+.overflow-container {
+    overflow: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    /* Hide scrollbar track and thumb initially */
+    scrollbar-track-color: transparent;
+    scrollbar-face-color: transparent;
+}
+
+/* WebKit-based browsers (Chrome, Safari) */
+.overflow-container::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar */
+    background-color: transparent; /* Hide the default background */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+.overflow-container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the default scrollbar thumb */
+    transition: background-color 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+/* Handle on hover */
+.overflow-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle on hover */
+}
+
+/* Show scrollbar track when container is hovered */
+.overflow-container:hover::-webkit-scrollbar-thumb {
+    background-color: #333333d3; /* Color of the handle when container is hovered */
+}
+
+/* Show scrollbar track when scrollbar is being interacted with (clicked and dragged) */
+.overflow-container::-webkit-scrollbar-thumb:active {
+    background-color: #333333d3; /* Color of the handle when being interacted with */
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;  
+    height: 30px;
+}
+
+.i2:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+.i2{
+    display: flex;
+    justify-content: center;
+    width: 15px;  
+    height: 15px;
+}
